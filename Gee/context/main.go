@@ -7,6 +7,7 @@ import (
 
 func main() {
 	r := gee.New()
+	//经参数都穿过去，对应的路经与其对应的方法封装在map里面，然后查询
 	r.GET("/", func(c *gee.Context) {
 		c.HTML(http.StatusOK, "<h1>Hello Gee</h1>")
 	})
